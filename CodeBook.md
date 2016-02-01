@@ -11,7 +11,7 @@ A full description is available at the [site](http://archive.ics.uci.edu/ml/data
 	An integer (1-30) indicating the ID of the subject
 	
 `activity`
-	The activity performed by the subject.  Possible ctivities include (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+	The activity performed by the subject.  Possible activities include: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
 	
 The remaining 66 attributes each represent the average value of the indicated measurement feature for a given subject and activity.  The feature names indicate the measurement using the following common syntax:
 
