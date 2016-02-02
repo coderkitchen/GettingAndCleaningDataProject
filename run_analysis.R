@@ -42,7 +42,7 @@ all_data <- cbind(sub_all, y_all, mean_std_data)
 all_data_melted <- melt(all_data, id.vars=c("subject", "activity"))
 
 # create a table with averages of all the features by activity for a given subject
-feature_means_by_subject_activity <- dcast(melted, subject+activity ~ variable, fun.aggregate=mean)
+feature_means_by_subject_activity <- dcast(all_data_melted, subject+activity ~ variable, fun.aggregate=mean)
 
 # write the new tidy data set to a file
 write.table(feature_means_by_subject_activity, file="FeatureMeans.txt", append=FALSE, row.names=FALSE)
